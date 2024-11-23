@@ -2,8 +2,8 @@ import Image from "next/image"
 
 export const Navbar = () => {
     return( 
-        <nav>
-          <ul className="flex justify-around" >
+        <nav className= " h-auto" >
+          <ul className="flex justify-around items-center" >
             <li>
               <Image 
                 src={'/IconoCatMarket.png'}
@@ -12,7 +12,7 @@ export const Navbar = () => {
                 alt="Logo CatMarket"  
               />
             </li>
-            <li>CatMarket</li>
+            <li>CatMarket</li >
             <li>CAT</li>
             <li>CAT</li>
             <li>CAT</li>
