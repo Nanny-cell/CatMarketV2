@@ -1,6 +1,4 @@
-import { Carousel } from "@/components/Carousel";
-import { Categories } from "@/components/Categories";
-import { Navbar } from "@/components/Navbar";
+import { Carousel, Categories, Navbar, Sales } from "@/components";
 
 export default function Home() {
   return (
@@ -10,6 +8,7 @@ export default function Home() {
         <Carousel />
       </header>
       <Categories />
+      <Sales />
     </main>
   );
 }

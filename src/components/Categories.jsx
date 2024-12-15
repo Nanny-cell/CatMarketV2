@@ -6,11 +6,11 @@ export const Categories = () => {
 
     return (
         <div className="flex justify-between gap-4">
-            <CategoriesItem source='/IconoLimpieza.svg' name='Limpieza' />
-            <CategoriesItem source='/IconoAlcohol.svg' name='Alcohol' />
-            <CategoriesItem source='/IconoFrutaVerdura.svg' name='Fruta y Verdura' />
-            <CategoriesItem source='/IconoBebe.svg' name='Bebe' />
-            <CategoriesItem source='/IconoCarne.svg' name='Carne' />
+            <CategoriesItem source='/IconoLimpieza.png' name='Limpieza' />
+            <CategoriesItem source='/IconoAlcohol.png' name='Alcohol' />
+            <CategoriesItem source='/IconoFrutaVerdura.png' name='Fruta y Verdura' />
+            <CategoriesItem source='/IconoBebe.png' name='Bebe' />
+            <CategoriesItem source='/IconoCarne.png' name='Carne' />
         </div>
     )
 }

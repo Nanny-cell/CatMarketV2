@@ -1,13 +1,12 @@
 import Image from "next/image";
 
-export default function MyImageComponent() {
+export default function MyImageComponent({ source, smw, smh, lgw, lgh, mdw, mdh, alt, h, w }) {
   return (
-    <div className="relative w-full h-[300px]">
+    <div className="relative w-full sm:h-full h-[180px]">
       <Image
-        src="/path/to/image.jpg"
+        src={source}
         alt="Descripción de la imagen"
         fill
-        className="object-cover"
       />
     </div>
   );
