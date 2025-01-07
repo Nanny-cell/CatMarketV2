@@ -1,16 +1,38 @@
-import Image from "next/image"
 import { CategoriesItem } from "./CategoriesItems"
 
 export const Categories = () => {
-    const categories = ["Limpieza", "Alcohol", "Fruta y Verduras", "Bebe", "Carne"];
+
+    const categories = [
+        {
+            source: '/IconoLimpieza.png',
+            name: 'Limpieza'
+        },
+        {
+            source: '/IconoAlcohol.png',
+            name: 'Alcohol'
+        },
+        {
+            source: '/IconoFrutaVerdura.png',
+            name: 'Fruta y Verdura'
+        },
+        {
+            source: '/IconoBebe.png',
+            name: 'Bebe'
+        },
+        {
+            source: '/IconoCarne.png',
+            name: 'Carne'
+        },
+    ];
 
     return (
         <div className="flex justify-between gap-4">
-            <CategoriesItem source='/IconoLimpieza.png' name='Limpieza' />
-            <CategoriesItem source='/IconoAlcohol.png' name='Alcohol' />
-            <CategoriesItem source='/IconoFrutaVerdura.png' name='Fruta y Verdura' />
-            <CategoriesItem source='/IconoBebe.png' name='Bebe' />
-            <CategoriesItem source='/IconoCarne.png' name='Carne' />
+            {categories.map((category, index) =>
+                <CategoriesItem
+                    key={index}
+                    source={category.source}
+                    name={category.name}
+                />)}
         </div>
     )
 }
