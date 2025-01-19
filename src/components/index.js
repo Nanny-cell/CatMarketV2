@@ -4,3 +4,4 @@ export * from "./CategoriesItems";
 export * from "./MyImageComponent";
 export * from "./Navbar";
 export * from "./Sales";
+export * from "./SearchInput";
