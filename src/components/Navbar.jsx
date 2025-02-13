@@ -1,7 +1,9 @@
+"use client"
 import Image from "next/image";
 import MyImageComponent from "./MyImageComponent";
 import { BurgerMenu } from "./BurgerMenu";
 import { SearchInput } from "./SearchInput";
+import Link from "next/link";
 
 export const Navbar = () => {
   return (
@@ -20,9 +22,13 @@ export const Navbar = () => {
           <li>
             <SearchInput />
           </li>
-          <li className="font-semibold">Ofertas</li>
-          <li className="font-semibold">Carrito</li>
           <li className="font-semibold">
+            <Link href="/products">Ofertas </Link>
+          </li>
+          <li className="font-semibold">
+            <Link href="/ruta">Carrito </Link>
+          </li>
+          <li className="font-semibold" onClick={() => console.log("iniciar sesion")}>
             Iniciar <br /> sesion
           </li>
           <li className="w-14 h-10">
